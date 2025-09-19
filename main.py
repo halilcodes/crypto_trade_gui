@@ -30,10 +30,10 @@ logger.addHandler(stream_handler)
 
 
 if __name__ == '__main__':
+
     binance_client = BinanceFuturesClient(False, keys.api_public, keys.api_secret)
 
-    root = Root()
-
+    root = Root(binance_client)
 
 
     root.mainloop()

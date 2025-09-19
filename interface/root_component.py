@@ -2,12 +2,14 @@ import time
 import tkinter as tk
 from interface.styling import *
 from interface.logging_component import Logging
-
+from connectors.binance_futures import BinanceFuturesClient
 
 class Root(tk.Tk):
 
-    def __init__(self):
+    def __init__(self, binance: BinanceFuturesClient):
         super().__init__()
+        self.binance = binance
+
         self.title("Crypto Tracker")
         self.configure(bg=BG_COLOR)
 
@@ -20,8 +22,15 @@ class Root(tk.Tk):
         self._logging_frame = Logging(self._left_frame, bg=BG_COLOR)
         self._logging_frame.pack(side=tk.TOP)
 
-        self._logging_frame.add_log("this is a test")
-        time.sleep(3)
-        self._logging_frame.add_log("this is a test 2")
-        time.sleep(5)
-        self._logging_frame.add_log("this is a test 3")
+
+        self._update_ui()
+
+
+    def _update_ui(self):
+        for log in self.binance.logs:
+            if not log['displayed']:
+                self._logging_frame.add_log(log['log'])
+                log['displayed'] = True
+
+
+        self.after(1500, self._update_ui)

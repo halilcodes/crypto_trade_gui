@@ -18,6 +18,7 @@ logger = logging.getLogger()
 class BinanceFuturesClient:
     def __init__(self, testnet:bool, api_public: str, api_secret: str):
 
+
         if testnet:
             self._base_url = "https://testnet.binancefuture.com"
             self._wss_url = "wss://stream.binancefuture.com/ws"
@@ -38,11 +39,17 @@ class BinanceFuturesClient:
         self.contracts = self.get_contracts()
         self.balances = self.get_balances()
 
+        self.logs = []
+
 
         t = threading.Thread(target=self._start_ws)
         t.start()
 
         logger.info("Binance Futures Client successfully initialized")
+
+    def _add_log(self, message: str):
+        # logger.info("%s", message)
+        self.logs.append({"log": message, "displayed": False})
 
 
     def _generate_signature(self, data: dict) -> str:
@@ -263,22 +270,25 @@ class BinanceFuturesClient:
                     self.prices[symbol]['bidQty'] = float(data['B'])
                     self.prices[symbol]['askQty'] = float(data['A'])
 
-                print(f"{symbol}: {self.prices[symbol]}")
+                #TODO: remove print when done!
+                # print(f"{symbol}: {self.prices[symbol]}")
+                self._add_log(f"{symbol}: {self.prices[symbol]}")
 
     def subscribe_channel(self, contracts: list[Contract], channel:str="bookTicker"):
         data = {
         'method': "SUBSCRIBE",
         'params': [],
-        'id': self._ws_id,
         }
 
         for contract in contracts:
-            # if contract.symbol in ["BTCUSDT", "ETHUSDT", "ADAUSDT", "SOLUSDT"]:
             data['params'].append(contract.symbol.lower() + "@"+  channel)
 
         # data['params'].append("btcusdt@" + channel)
         # data['params'].append("ethusdt@" + channel)
-        # pprint(data)
+        data['params'].append("adausdt@" + channel)
+        # data['params'].append(contracts[0].symbol.lower() + "@" + channel)
+        data['id'] =  self._ws_id
+
 
         try:
             self._ws.send(json.dumps(data))
@@ -289,7 +299,12 @@ class BinanceFuturesClient:
 
 
 if __name__ == "__main__":
-    client = BinanceFuturesClient(True, keys.api_public, keys.api_secret)
+
+    root = Root()
+
+    client = BinanceFuturesClient(root, True, keys.api_public, keys.api_secret)
+
+    root.mainloop()
 
 
 
