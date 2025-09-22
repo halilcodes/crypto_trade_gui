@@ -1,14 +1,20 @@
 import time
 import tkinter as tk
+import logging
 from interface.styling import *
 from interface.logging_component import Logging
 from connectors.binance_futures import BinanceFuturesClient
+from interface.watchlist_component import Watchlist
+
+logger = logging.getLogger()
+
 
 class Root(tk.Tk):
 
     def __init__(self, binance: BinanceFuturesClient):
         super().__init__()
         self.binance = binance
+        # self.bitmex = bitmex
 
         self.title("Crypto Tracker")
         self.configure(bg=BG_COLOR)
@@ -19,6 +25,9 @@ class Root(tk.Tk):
         self._right_frame = tk.Frame(self, bg=BG_COLOR)
         self._right_frame.pack(side=tk.LEFT)
 
+        self._watchlist_frame = Watchlist(self.binance.contracts, self._left_frame, bg=BG_COLOR)
+        self._watchlist_frame.pack(side=tk.TOP)
+
         self._logging_frame = Logging(self._left_frame, bg=BG_COLOR)
         self._logging_frame.pack(side=tk.TOP)
 
@@ -27,10 +36,51 @@ class Root(tk.Tk):
 
 
     def _update_ui(self):
+
+        # Logs
+
         for log in self.binance.logs:
             if not log['displayed']:
                 self._logging_frame.add_log(log['log'])
                 log['displayed'] = True
+
+        # Watchlist prices
+
+        try:
+
+            for key, value in self._watchlist_frame.body_widgets['symbol'].items():
+
+                symbol = self._watchlist_frame.body_widgets['symbol'][key].cget("text")
+                exchange = self._watchlist_frame.body_widgets['exchange'][key].cget("text")
+
+                if exchange == "Binance":
+                    if symbol not in self.binance.contracts:
+                        continue
+
+                    if symbol not in self.binance.prices:
+                        self.binance.get_bid_ask(self.binance.contracts[symbol])
+                        continue
+
+                    precision = self.binance.contracts[symbol].price_decimals
+                    prices = self.binance.prices[symbol]
+
+                elif exchange == "Bitmex":
+                    prices = {"bid": 1.00001, "ask": 1.00001}
+                    precision = self.binance.contracts[symbol].price_decimals
+
+                else:
+                    continue
+
+                if prices['bid'] is not None:
+                    price_str = "{0:.{prec}f}".format(prices['bid'], prec=precision)
+                    self._watchlist_frame.body_widgets['bid_var'][key].set(price_str)
+
+                if prices['ask'] is not None:
+                    price_str = "{0:.{prec}f}".format(prices['ask'], prec=precision)
+                    self._watchlist_frame.body_widgets['ask_var'][key].set(price_str)
+
+        except RuntimeError as e:
+            logger.error("Runtime error while looping through the watchlist dictionary: %s", e)
 
 
         self.after(1500, self._update_ui)

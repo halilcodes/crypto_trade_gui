@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11804133-d0ea-4ab3-a568-0059bb4af516" name="Changes" comment="proceed to the interface">
+    <list default="true" id="11804133-d0ea-4ab3-a568-0059bb4af516" name="Changes" comment="update the UI">
+      <change afterPath="$PROJECT_DIR$/interface/watchlist_component.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/connectors/binance_futures.py" beforeDir="false" afterPath="$PROJECT_DIR$/connectors/binance_futures.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/logging_component.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/logging_component.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interface/root_component.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/root_component.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/styling.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/styling.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,18 +48,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.basic_order_example (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.binance_futures (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.binance_futures.executor&quot;: &quot;Run&quot;,
-    &quot;Python.bitmex_contracts.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.trial.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.basic_order_example (1).executor": "Run",
+    "Python.binance_futures (1).executor": "Run",
+    "Python.binance_futures.executor": "Run",
+    "Python.bitmex_contracts.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.trial.executor": "Run",
+    "Python.watchlist_component.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\halil\Desktop\Coding_2024\udemy\crypto_trade_gui\interface" />
@@ -67,28 +68,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.main">
-    <configuration name="basic_order_example (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="crypto_trade_gui" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/basic_order_example.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="binance_1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="crypto_trade_gui" />
       <option name="ENV_FILES" value="" />
@@ -199,13 +178,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="watchlist_component" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="crypto_trade_gui" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interface" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interface/watchlist_component.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.watchlist_component" />
         <item itemvalue="Python.binance_futures" />
         <item itemvalue="Python.binance_1" />
         <item itemvalue="Python.binance_1" />
-        <item itemvalue="Python.bitmex_contracts" />
       </list>
     </recent_temporary>
   </component>
@@ -241,12 +242,21 @@
       <option name="project" value="LOCAL" />
       <updated>1758283512807</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update the UI">
+      <option name="closed" value="true" />
+      <created>1758287718940</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1758287718940</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update .gitignore" />
     <MESSAGE value="proceed to the interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="proceed to the interface" />
+    <MESSAGE value="update the UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="update the UI" />
   </component>
 </project>

@@ -92,7 +92,7 @@ class BinanceFuturesClient:
         content = self._make_request("GET", "/fapi/v1/exchangeInfo")
         if content:
             for contract_data in content["symbols"]:
-                contracts[contract_data['pair']] = Contract(contract_data)
+                contracts[contract_data['symbol']] = Contract(contract_data)
 
             return contracts
 
@@ -244,7 +244,10 @@ class BinanceFuturesClient:
 
     def _on_open(self, ws):
         logger.info("Websocket Binance Connection opened")
+        # TODO: either sub to no channel or use !bookTicker while initializing
+        # preferably no channel
         self.subscribe_channel(list(self.contracts.values()), "bookTicker")
+
 
     def _on_close(self, ws, code, msg:str):
         logger.warning("Websocket Binance Connection closed: %s code || %s", code, msg)
@@ -271,27 +274,31 @@ class BinanceFuturesClient:
                     self.prices[symbol]['askQty'] = float(data['A'])
 
                 #TODO: remove print when done!
-                # print(f"{symbol}: {self.prices[symbol]}")
-                self._add_log(f"{symbol}: {self.prices[symbol]}")
+                print(f"{symbol}: {self.prices[symbol]}")
+                # self._add_log(f"{symbol}: {self.prices[symbol]}")
 
     def subscribe_channel(self, contracts: list[Contract], channel:str="bookTicker"):
+
+        # TODO: SUBBİNG TO EVERY CONTRACK BY NAME FAİLS
         data = {
         'method': "SUBSCRIBE",
         'params': [],
         }
 
-        for contract in contracts:
-            data['params'].append(contract.symbol.lower() + "@"+  channel)
+        # for contract in contracts:
+        #     data['params'].append(contract.symbol.lower() + "@"+  channel)
 
-        # data['params'].append("btcusdt@" + channel)
-        # data['params'].append("ethusdt@" + channel)
+        data['params'].append("btcusdt@" + channel)
+        data['params'].append("ethusdt@" + channel)
         data['params'].append("adausdt@" + channel)
-        # data['params'].append(contracts[0].symbol.lower() + "@" + channel)
+        data['params'].append("solusdt@" + channel)
         data['id'] =  self._ws_id
 
 
         try:
             self._ws.send(json.dumps(data))
+
+            # logger.info("subbed to channels %s", list(c.symbol for c in contracts))
         except Exception as e:
             logger.error("Connection error while subbing @ %s: %s",channel, e)
 
@@ -300,11 +307,8 @@ class BinanceFuturesClient:
 
 if __name__ == "__main__":
 
-    root = Root()
+    client = BinanceFuturesClient(True, keys.api_public, keys.api_secret)
 
-    client = BinanceFuturesClient(root, True, keys.api_public, keys.api_secret)
-
-    root.mainloop()
 
 
 
