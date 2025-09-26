@@ -39,6 +39,8 @@ class BinanceFuturesClient:
         self.contracts = self.get_contracts()
         self.balances = self.get_balances()
 
+        self.top20_contracts = self.get_top20()
+
         self.logs = []
 
 
@@ -46,6 +48,9 @@ class BinanceFuturesClient:
         t.start()
 
         logger.info("Binance Futures Client successfully initialized")
+
+    def get_top20(self):
+        return None
 
     def _add_log(self, message: str):
         # logger.info("%s", message)
@@ -240,12 +245,14 @@ class BinanceFuturesClient:
                 self._ws.run_forever()
             except Exception as e:
                 logger.error("Binance WSS error in run_forever: %s",e)
-            time.sleep(2)
+                time.sleep(2)
 
     def _on_open(self, ws):
         logger.info("Websocket Binance Connection opened")
         # TODO: either sub to no channel or use !bookTicker while initializing
         # preferably no channel
+
+
         self.subscribe_channel(list(self.contracts.values()), "bookTicker")
 
 
@@ -274,7 +281,7 @@ class BinanceFuturesClient:
                     self.prices[symbol]['askQty'] = float(data['A'])
 
                 #TODO: remove print when done!
-                print(f"{symbol}: {self.prices[symbol]}")
+                # print(f"{symbol}: {self.prices[symbol]}")
                 # self._add_log(f"{symbol}: {self.prices[symbol]}")
 
     def subscribe_channel(self, contracts: list[Contract], channel:str="bookTicker"):
@@ -307,7 +314,9 @@ class BinanceFuturesClient:
 
 if __name__ == "__main__":
 
-    client = BinanceFuturesClient(True, keys.api_public, keys.api_secret)
+    client = BinanceFuturesClient(False, keys.api_public, keys.api_secret)
+
+    pprint(client.contracts['ADAUSDT'].get_all_info())
 
 
 

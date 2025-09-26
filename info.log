@@ -2137,3 +2137,199 @@
 2025-09-22 17:09:18,888 INFO :: Binance Futures Client successfully initialized
 2025-09-22 17:09:19,819 INFO :: Websocket connected
 2025-09-22 17:09:19,820 INFO :: Websocket Binance Connection opened
+2025-09-23 14:06:40,122 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-23 14:06:40,457 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/11" 200 None
+2025-09-23 14:06:40,482 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-23 14:06:40,783 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v2/account?timestamp=1758625600481&signature=51cb30bcefcc51ece7671fdbb77ec7584d13134d04885082097e7e078b074cde HTTP/11" 200 None
+2025-09-23 14:06:40,787 INFO :: Binance Futures Client successfully initialized
+2025-09-23 14:06:42,154 INFO :: Websocket connected
+2025-09-23 14:06:42,155 INFO :: Websocket Binance Connection opened
+2025-09-23 14:06:42,430 WARNING :: Websocket Binance Connection closed: 1008 code || Invalid request
+2025-09-23 14:06:43,250 INFO :: Websocket connected
+2025-09-23 14:06:43,250 INFO :: Websocket Binance Connection opened
+2025-09-23 14:06:43,519 WARNING :: Websocket Binance Connection closed: 1008 code || Invalid request
+2025-09-23 14:06:44,361 INFO :: Websocket connected
+2025-09-23 14:06:44,361 INFO :: Websocket Binance Connection opened
+2025-09-23 14:06:44,647 WARNING :: Websocket Binance Connection closed: 1008 code || Invalid request
+2025-09-23 14:06:45,458 INFO :: Websocket connected
+2025-09-23 14:06:45,458 INFO :: Websocket Binance Connection opened
+2025-09-23 14:06:45,810 WARNING :: Websocket Binance Connection closed: 1008 code || Invalid request
+2025-09-23 14:08:06,023 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-23 14:08:06,353 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/11" 200 None
+2025-09-23 14:08:06,379 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-23 14:08:06,685 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v2/account?timestamp=1758625686377&signature=1e24a069096feec403b98c44d0ad2c58429df585d61ded7bb1f01a3c2c1634cb HTTP/11" 200 None
+2025-09-23 14:08:06,688 INFO :: Binance Futures Client successfully initialized
+2025-09-23 14:08:07,582 INFO :: Websocket connected
+2025-09-23 14:08:07,582 INFO :: Websocket Binance Connection opened
+2025-09-23 14:08:07,908 WARNING :: Websocket Binance Connection closed: 1008 code || Invalid request
+2025-09-23 14:08:08,738 INFO :: Websocket connected
+2025-09-23 14:08:08,738 INFO :: Websocket Binance Connection opened
+2025-09-23 14:08:09,051 WARNING :: Websocket Binance Connection closed: 1008 code || Invalid request
+2025-09-23 14:08:09,883 INFO :: Websocket connected
+2025-09-23 14:08:09,883 INFO :: Websocket Binance Connection opened
+2025-09-23 14:08:10,249 WARNING :: Websocket Binance Connection closed: 1008 code || Invalid request
+2025-09-23 14:08:11,069 INFO :: Websocket connected
+2025-09-23 14:08:11,069 INFO :: Websocket Binance Connection opened
+2025-09-23 14:08:11,335 WARNING :: Websocket Binance Connection closed: 1008 code || Invalid request
+2025-09-23 14:09:57,499 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-23 14:09:57,832 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/11" 200 None
+2025-09-23 14:09:57,857 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-23 14:09:58,161 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v2/account?timestamp=1758625797856&signature=a913d718ba6179ee34f81e1c8e564ca7354b27c83f010d871bcb5e440efae882 HTTP/11" 200 None
+2025-09-23 14:09:58,165 INFO :: Binance Futures Client successfully initialized
+2025-09-23 14:09:59,127 INFO :: Websocket connected
+2025-09-23 14:09:59,127 INFO :: Websocket Binance Connection opened
+2025-09-23 14:09:59,128 ERROR :: Connection error while subbing !bookTicker: No connection adapters were found for 'wss://ws-fapi.binance.com/ws-fapi/v1'
+2025-09-23 14:10:46,358 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-23 14:10:46,684 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/11" 200 None
+2025-09-23 14:10:46,710 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-23 14:10:47,010 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v2/account?timestamp=1758625846709&signature=34218ad91b15cc6fdc7c62bc20a5fdcb337748514acf11d3e509b6f4222d2a6f HTTP/11" 200 None
+2025-09-23 14:10:47,015 INFO :: Binance Futures Client successfully initialized
+2025-09-23 14:10:47,930 INFO :: Websocket connected
+2025-09-23 14:10:47,931 INFO :: Websocket Binance Connection opened
+2025-09-23 14:10:47,932 ERROR :: Connection error while subbing !bookTicker: No connection adapters were found for 'wss://ws-fapi.binance.com/ws-fapi/v1'
+2025-09-23 14:13:11,590 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-23 14:13:11,919 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/11" 200 None
+2025-09-23 14:13:11,946 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-23 14:13:12,246 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v2/account?timestamp=1758625991944&signature=59f9e6989908aa6edafbb6d4d4e24e7aefeb6f61efaa513c37397ccb67f38be8 HTTP/11" 200 None
+2025-09-23 14:13:12,250 INFO :: Binance Futures Client successfully initialized
+2025-09-23 14:13:13,130 INFO :: Websocket connected
+2025-09-23 14:13:13,130 INFO :: Websocket Binance Connection opened
+2025-09-23 14:13:13,132 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-23 14:13:13,180 DEBUG :: https://fapi.binance.com:443 "GET /?id=halilhalil&method=session.logon&params=apiKey&params=timestamp&signature=5ca31370b764610e116804eef776ff516ae013a84a789dc5914793deb6e9111c HTTP/11" 403 919
+2025-09-23 14:13:13,181 ERROR :: Connection error while subbing !bookTicker: Expecting value: line 1 column 1 (char 0)
+2025-09-23 14:21:49,331 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-23 14:21:49,656 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/11" 200 None
+2025-09-23 14:21:49,686 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-23 14:21:49,992 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v2/account?timestamp=1758626509685&signature=031660eef3a636ed655da6e3f8f9c7e0d75c01fc24ff89e7765be70404e6cb41 HTTP/11" 200 None
+2025-09-23 14:21:49,998 INFO :: Binance Futures Client successfully initialized
+2025-09-23 14:21:50,956 INFO :: Websocket connected
+2025-09-23 14:21:50,956 INFO :: Websocket Binance Connection opened
+2025-09-23 16:14:44,959 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-23 16:14:45,296 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/11" 200 None
+2025-09-23 16:14:45,323 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-23 16:14:45,622 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v2/account?timestamp=1758633285322&signature=e82056277ce8035372c61b1f08fb173618b608eec3a82bbfd238d52432dc8ca8 HTTP/11" 200 None
+2025-09-23 16:14:45,626 INFO :: Binance Futures Client successfully initialized
+2025-09-23 16:14:46,649 INFO :: Websocket connected
+2025-09-23 16:14:46,649 INFO :: Websocket Binance Connection opened
+2025-09-23 16:43:42,640 ERROR :: Websocket Binance Connection Error: Connection to remote host was lost.
+2025-09-23 16:43:42,646 ERROR :: Connection to remote host was lost. - goodbye
+2025-09-23 16:43:42,647 WARNING :: Websocket Binance Connection closed: None code || None
+2025-09-23 16:43:43,528 INFO :: Websocket connected
+2025-09-23 16:43:43,528 INFO :: Websocket Binance Connection opened
+2025-09-23 16:44:21,818 ERROR :: Websocket Binance Connection Error: Connection to remote host was lost.
+2025-09-23 16:44:21,819 ERROR :: Connection to remote host was lost. - goodbye
+2025-09-23 16:44:21,819 WARNING :: Websocket Binance Connection closed: None code || None
+2025-09-23 16:44:22,656 INFO :: Websocket connected
+2025-09-23 16:44:22,656 INFO :: Websocket Binance Connection opened
+2025-09-23 16:44:30,485 ERROR :: Websocket Binance Connection Error: Connection to remote host was lost.
+2025-09-23 16:44:30,485 ERROR :: Connection to remote host was lost. - goodbye
+2025-09-23 16:44:30,485 WARNING :: Websocket Binance Connection closed: None code || None
+2025-09-23 16:44:31,346 INFO :: Websocket connected
+2025-09-23 16:44:31,346 INFO :: Websocket Binance Connection opened
+2025-09-24 15:02:25,779 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-24 15:02:26,036 ERROR :: Connection error while making GET request to /fapi/v1/exchangeInfo endpoint: ('Connection aborted.', ConnectionResetError(10054, 'Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý', None, 10054, None))
+2025-09-24 15:02:26,039 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-24 15:02:26,083 ERROR :: Connection error while making GET request to /fapi/v2/account endpoint: ('Connection aborted.', ConnectionResetError(10054, 'Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý', None, 10054, None))
+2025-09-24 15:02:26,085 INFO :: Binance Futures Client successfully initialized
+2025-09-24 15:02:26,701 ERROR :: Websocket Binance Connection Error: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý
+2025-09-24 15:02:26,703 ERROR :: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý - goodbye
+2025-09-24 15:02:26,703 WARNING :: Websocket Binance Connection closed: None code || None
+2025-09-24 15:02:27,025 ERROR :: Websocket Binance Connection Error: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý
+2025-09-24 15:02:27,025 ERROR :: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý - goodbye
+2025-09-24 15:02:27,026 WARNING :: Websocket Binance Connection closed: None code || None
+2025-09-24 15:02:27,348 ERROR :: Websocket Binance Connection Error: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý
+2025-09-24 15:02:27,348 ERROR :: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý - goodbye
+2025-09-24 15:02:27,348 WARNING :: Websocket Binance Connection closed: None code || None
+2025-09-24 15:02:27,665 ERROR :: Websocket Binance Connection Error: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý
+2025-09-24 15:02:27,665 ERROR :: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý - goodbye
+2025-09-24 15:02:27,665 WARNING :: Websocket Binance Connection closed: None code || None
+2025-09-24 15:02:27,985 ERROR :: Websocket Binance Connection Error: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý
+2025-09-24 15:02:27,985 ERROR :: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý - goodbye
+2025-09-24 15:02:27,985 WARNING :: Websocket Binance Connection closed: None code || None
+2025-09-24 15:02:28,302 ERROR :: Websocket Binance Connection Error: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý
+2025-09-24 15:02:28,303 ERROR :: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý - goodbye
+2025-09-24 15:02:28,303 WARNING :: Websocket Binance Connection closed: None code || None
+2025-09-24 15:02:28,629 ERROR :: Websocket Binance Connection Error: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý
+2025-09-24 15:02:28,629 ERROR :: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý - goodbye
+2025-09-24 15:02:28,629 WARNING :: Websocket Binance Connection closed: None code || None
+2025-09-24 15:02:28,984 ERROR :: Websocket Binance Connection Error: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý
+2025-09-24 15:02:28,984 ERROR :: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý - goodbye
+2025-09-24 15:02:28,984 WARNING :: Websocket Binance Connection closed: None code || None
+2025-09-24 15:02:29,307 ERROR :: Websocket Binance Connection Error: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý
+2025-09-24 15:02:29,307 ERROR :: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý - goodbye
+2025-09-24 15:02:29,307 WARNING :: Websocket Binance Connection closed: None code || None
+2025-09-24 15:02:29,704 ERROR :: Websocket Binance Connection Error: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý
+2025-09-24 15:02:29,705 ERROR :: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý - goodbye
+2025-09-24 15:02:29,705 WARNING :: Websocket Binance Connection closed: None code || None
+2025-09-24 15:02:30,027 ERROR :: Websocket Binance Connection Error: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý
+2025-09-24 15:02:30,028 ERROR :: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý - goodbye
+2025-09-24 15:02:30,028 WARNING :: Websocket Binance Connection closed: None code || None
+2025-09-24 15:02:30,351 ERROR :: Websocket Binance Connection Error: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý
+2025-09-24 15:02:30,352 ERROR :: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý - goodbye
+2025-09-24 15:02:30,352 WARNING :: Websocket Binance Connection closed: None code || None
+2025-09-24 15:02:30,684 ERROR :: Websocket Binance Connection Error: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý
+2025-09-24 15:02:30,685 ERROR :: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý - goodbye
+2025-09-24 15:02:30,685 WARNING :: Websocket Binance Connection closed: None code || None
+2025-09-24 15:02:31,013 ERROR :: Websocket Binance Connection Error: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý
+2025-09-24 15:02:31,014 ERROR :: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý - goodbye
+2025-09-24 15:02:31,014 WARNING :: Websocket Binance Connection closed: None code || None
+2025-09-24 15:02:31,344 ERROR :: Websocket Binance Connection Error: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý
+2025-09-24 15:02:31,344 ERROR :: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý - goodbye
+2025-09-24 15:02:31,345 WARNING :: Websocket Binance Connection closed: None code || None
+2025-09-24 15:02:31,661 ERROR :: Websocket Binance Connection Error: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý
+2025-09-24 15:02:31,662 ERROR :: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý - goodbye
+2025-09-24 15:02:31,662 WARNING :: Websocket Binance Connection closed: None code || None
+2025-09-24 15:02:31,985 ERROR :: Websocket Binance Connection Error: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý
+2025-09-24 15:02:31,985 ERROR :: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý - goodbye
+2025-09-24 15:02:31,985 WARNING :: Websocket Binance Connection closed: None code || None
+2025-09-24 15:02:32,309 ERROR :: Websocket Binance Connection Error: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý
+2025-09-24 15:02:32,309 ERROR :: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý - goodbye
+2025-09-24 15:02:32,309 WARNING :: Websocket Binance Connection closed: None code || None
+2025-09-24 15:02:32,635 ERROR :: Websocket Binance Connection Error: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý
+2025-09-24 15:02:32,635 ERROR :: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý - goodbye
+2025-09-24 15:02:32,635 WARNING :: Websocket Binance Connection closed: None code || None
+2025-09-24 15:03:05,294 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-24 15:03:05,355 ERROR :: Connection error while making GET request to /fapi/v1/exchangeInfo endpoint: ('Connection aborted.', ConnectionResetError(10054, 'Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý', None, 10054, None))
+2025-09-24 15:03:05,357 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-24 15:03:05,405 ERROR :: Connection error while making GET request to /fapi/v2/account endpoint: ('Connection aborted.', ConnectionResetError(10054, 'Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý', None, 10054, None))
+2025-09-24 15:03:05,408 INFO :: Binance Futures Client successfully initialized
+2025-09-24 15:03:05,802 ERROR :: Websocket Binance Connection Error: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý
+2025-09-24 15:03:05,802 ERROR :: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý - goodbye
+2025-09-24 15:03:05,802 WARNING :: Websocket Binance Connection closed: None code || None
+2025-09-24 15:03:06,126 ERROR :: Websocket Binance Connection Error: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý
+2025-09-24 15:03:06,126 ERROR :: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý - goodbye
+2025-09-24 15:03:06,126 WARNING :: Websocket Binance Connection closed: None code || None
+2025-09-24 15:03:06,454 ERROR :: Websocket Binance Connection Error: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý
+2025-09-24 15:03:06,454 ERROR :: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý - goodbye
+2025-09-24 15:03:06,454 WARNING :: Websocket Binance Connection closed: None code || None
+2025-09-24 15:03:06,783 ERROR :: Websocket Binance Connection Error: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý
+2025-09-24 15:03:06,783 ERROR :: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý - goodbye
+2025-09-24 15:03:06,783 WARNING :: Websocket Binance Connection closed: None code || None
+2025-09-24 15:03:07,106 ERROR :: Websocket Binance Connection Error: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý
+2025-09-24 15:03:07,106 ERROR :: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý - goodbye
+2025-09-24 15:03:07,106 WARNING :: Websocket Binance Connection closed: None code || None
+2025-09-24 15:03:07,428 ERROR :: Websocket Binance Connection Error: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý
+2025-09-24 15:03:07,428 ERROR :: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý - goodbye
+2025-09-24 15:03:07,428 WARNING :: Websocket Binance Connection closed: None code || None
+2025-09-24 15:03:07,746 ERROR :: Websocket Binance Connection Error: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý
+2025-09-24 15:03:07,747 ERROR :: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý - goodbye
+2025-09-24 15:03:07,747 WARNING :: Websocket Binance Connection closed: None code || None
+2025-09-24 15:03:08,081 ERROR :: Websocket Binance Connection Error: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý
+2025-09-24 15:03:08,081 ERROR :: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý - goodbye
+2025-09-24 15:03:08,081 WARNING :: Websocket Binance Connection closed: None code || None
+2025-09-24 15:03:08,406 ERROR :: Websocket Binance Connection Error: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý
+2025-09-24 15:03:08,407 ERROR :: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý - goodbye
+2025-09-24 15:03:08,407 WARNING :: Websocket Binance Connection closed: None code || None
+2025-09-24 15:03:08,729 ERROR :: Websocket Binance Connection Error: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý
+2025-09-24 15:03:08,729 ERROR :: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý - goodbye
+2025-09-24 15:03:08,730 WARNING :: Websocket Binance Connection closed: None code || None
+2025-09-24 15:03:09,057 ERROR :: Websocket Binance Connection Error: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý
+2025-09-24 15:03:09,058 ERROR :: [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý - goodbye
+2025-09-24 15:03:09,058 WARNING :: Websocket Binance Connection closed: None code || None
+2025-09-26 17:11:20,473 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-26 17:11:20,817 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/11" 200 None
+2025-09-26 17:11:20,841 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-26 17:11:21,152 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v2/account?timestamp=1758895880840&signature=cd6a51a07acc26f08a752b056ad040cac6ac2472986b56c8ff57abfe1b15b73d HTTP/11" 200 None
+2025-09-26 17:11:21,156 INFO :: Binance Futures Client successfully initialized
+2025-09-26 17:11:22,188 INFO :: Websocket connected
+2025-09-26 17:11:22,188 INFO :: Websocket Binance Connection opened

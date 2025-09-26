@@ -25,6 +25,7 @@ class Candle:
 
 class Contract:
     def __init__(self, contract_info):
+        self.info = contract_info
         self.symbol = contract_info['symbol']
         self.base_asset = contract_info['baseAsset']
         self.quote_asset = contract_info['quoteAsset']
@@ -36,6 +37,8 @@ class Contract:
             self.min_notion = 5.0
             logger.error("Min_Notion not found in %s ... Adjusted to 5.0", self.symbol)
 
+    def get_all_info(self):
+        return self.info
 
 class OrderStatus:
     def __init__(self, order_info):

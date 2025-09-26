@@ -59,6 +59,8 @@ class Watchlist(tk.Frame):
             if h in ["bid", "ask"]:
                 self.body_widgets[h+ "_var"] = dict()
 
+        self._body_index += 1
+
 
 
     def _remove_symbol(self, b_index: int):
