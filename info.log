@@ -2333,3 +2333,222 @@
 2025-09-26 17:11:21,156 INFO :: Binance Futures Client successfully initialized
 2025-09-26 17:11:22,188 INFO :: Websocket connected
 2025-09-26 17:11:22,188 INFO :: Websocket Binance Connection opened
+2025-09-30 10:27:08,321 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-30 10:27:08,666 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/11" 200 None
+2025-09-30 10:27:08,689 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-30 10:27:09,000 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v2/account?timestamp=1759217228688&signature=bef0e59fd73243b2a22ad61d1b34c7b425da399e00d5f225dceac6afee051ba0 HTTP/11" 200 None
+2025-09-30 10:27:09,003 INFO :: Binance Futures Client successfully initialized
+2025-09-30 10:27:10,037 INFO :: Websocket connected
+2025-09-30 10:27:10,037 INFO :: Websocket Binance Connection opened
+2025-09-30 10:27:51,510 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-30 10:27:51,832 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/11" 200 None
+2025-09-30 10:27:51,864 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-30 10:27:52,175 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v2/account?timestamp=1759217271863&signature=e80714ccddcc9509a3354e7fc166706ddd2d6d0ce13555280ff7d50f99ffac48 HTTP/11" 200 None
+2025-09-30 10:27:52,179 INFO :: Binance Futures Client successfully initialized
+2025-09-30 10:27:53,079 INFO :: Websocket connected
+2025-09-30 10:27:53,079 INFO :: Websocket Binance Connection opened
+2025-09-30 13:37:53,942 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-30 13:37:55,147 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/11" 200 None
+2025-09-30 13:37:55,172 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-30 13:37:55,484 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v2/account?timestamp=1759228675171&signature=12a7c15beb3d315e9ef734b295e6556c300545537d4db7b885d97aaefe945017 HTTP/11" 200 None
+2025-09-30 13:37:55,489 INFO :: Binance Futures Client successfully initialized
+2025-09-30 13:37:56,669 INFO :: Websocket connected
+2025-09-30 13:37:56,669 INFO :: Websocket Binance Connection opened
+2025-09-30 13:38:33,490 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-30 13:38:33,815 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/11" 200 None
+2025-09-30 13:38:33,839 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-30 13:38:34,147 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v2/account?timestamp=1759228713838&signature=cddf066a8d685a78e1d7b0300d120aab2add43488c03f503193bc3f990b426d0 HTTP/11" 200 None
+2025-09-30 13:38:34,151 INFO :: Binance Futures Client successfully initialized
+2025-09-30 13:38:35,116 INFO :: Websocket connected
+2025-09-30 13:38:35,117 INFO :: Websocket Binance Connection opened
+2025-09-30 13:39:13,759 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-30 13:39:15,004 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/11" 200 None
+2025-09-30 13:39:15,026 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-30 13:39:15,948 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v2/account?timestamp=1759228755025&signature=86b94e5940638b6a2fada047122b90872bfcc8327a1ab342be1eb5db29ace42c HTTP/11" 200 None
+2025-09-30 13:39:15,951 INFO :: Binance Futures Client successfully initialized
+2025-09-30 13:39:16,843 INFO :: Websocket connected
+2025-09-30 13:39:16,843 INFO :: Websocket Binance Connection opened
+2025-09-30 13:39:32,739 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-30 13:39:33,857 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/11" 200 None
+2025-09-30 13:39:33,879 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-30 13:39:34,704 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v2/account?timestamp=1759228773878&signature=879190134c494500af466a873864e13591f180f49c10d16de1db2b1b080e2bea HTTP/11" 200 None
+2025-09-30 13:39:34,707 INFO :: Binance Futures Client successfully initialized
+2025-09-30 13:39:35,619 INFO :: Websocket connected
+2025-09-30 13:39:35,619 INFO :: Websocket Binance Connection opened
+2025-09-30 13:41:09,696 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-30 13:41:10,125 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/ticker/bookTicker?symbol=LINKUSDT HTTP/11" 200 None
+2025-09-30 14:17:18,499 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-30 14:17:18,860 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/11" 200 None
+2025-09-30 14:17:18,872 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-30 14:17:19,200 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v2/account?timestamp=1759231038871&signature=cfd2383e64dcf6d8a64b790c3a29658540ac73472b187110d16e026c01d6cbd5 HTTP/11" 200 None
+2025-09-30 14:17:19,213 INFO :: Binance Futures Client successfully initialized
+2025-09-30 14:17:20,253 INFO :: Websocket connected
+2025-09-30 14:17:20,253 INFO :: Websocket Binance Connection opened
+2025-09-30 14:20:25,577 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-30 14:20:25,974 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/11" 200 None
+2025-09-30 14:20:26,006 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-30 14:20:26,314 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v2/account?timestamp=1759231226005&signature=e9a75744451c78eefedc91cde499486a208f2d6de4a5261782e2683eb87335ba HTTP/11" 200 None
+2025-09-30 14:20:26,318 INFO :: Binance Futures Client successfully initialized
+2025-09-30 14:20:27,238 INFO :: Websocket connected
+2025-09-30 14:20:27,238 INFO :: Websocket Binance Connection opened
+2025-09-30 14:22:16,766 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-30 14:22:17,103 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/11" 200 None
+2025-09-30 14:22:17,128 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-30 14:22:17,449 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v2/account?timestamp=1759231337127&signature=eae9f652075eadf83b7c39ca42c8ca9b25844bc754361b7a14f07e893480ead4 HTTP/11" 200 None
+2025-09-30 14:22:17,453 INFO :: Binance Futures Client successfully initialized
+2025-09-30 14:22:18,354 INFO :: Websocket connected
+2025-09-30 14:22:18,354 INFO :: Websocket Binance Connection opened
+2025-09-30 14:23:13,945 ERROR :: Websocket Binance Connection Error: Connection to remote host was lost.
+2025-09-30 14:23:13,946 ERROR :: Connection to remote host was lost. - goodbye
+2025-09-30 14:23:13,946 WARNING :: Websocket Binance Connection closed: None code || None
+2025-09-30 14:23:14,873 INFO :: Websocket connected
+2025-09-30 14:23:14,873 INFO :: Websocket Binance Connection opened
+2025-09-30 14:24:57,930 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-30 14:24:58,328 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/11" 200 None
+2025-09-30 14:24:58,356 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-30 14:24:58,708 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v2/account?timestamp=1759231498353&signature=c585ddaa11084ef161c968b9f259d8bfe343e0c5a69728a309c888f8ced879b1 HTTP/11" 200 None
+2025-09-30 14:24:58,712 INFO :: Binance Futures Client successfully initialized
+2025-09-30 14:24:59,770 INFO :: Websocket connected
+2025-09-30 14:24:59,771 INFO :: Websocket Binance Connection opened
+2025-09-30 14:25:20,120 ERROR :: Websocket Binance Connection Error: Connection to remote host was lost.
+2025-09-30 14:25:20,120 ERROR :: Connection to remote host was lost. - goodbye
+2025-09-30 14:25:20,120 WARNING :: Websocket Binance Connection closed: None code || None
+2025-09-30 14:25:21,008 INFO :: Websocket connected
+2025-09-30 14:25:21,008 INFO :: Websocket Binance Connection opened
+2025-09-30 14:57:37,120 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-30 14:57:37,455 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/11" 200 None
+2025-09-30 14:57:37,492 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-30 14:57:37,836 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v2/account?timestamp=1759233457491&signature=50737355198c75ac3581890eade3721d359d5c4dd481bd3013d35d88dda78add HTTP/11" 200 None
+2025-09-30 14:57:37,840 INFO :: Binance Futures Client successfully initialized
+2025-09-30 14:57:38,826 INFO :: Websocket connected
+2025-09-30 14:57:38,826 INFO :: Websocket Binance Connection opened
+2025-09-30 14:57:58,256 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-30 14:57:58,584 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/11" 200 None
+2025-09-30 14:57:58,616 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-30 14:57:58,944 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v2/account?timestamp=1759233478615&signature=4cc03f7825c01a1f74fa398d4f585a70ecf536adafa6891355a104cf3cb7b1e3 HTTP/11" 200 None
+2025-09-30 14:57:58,947 INFO :: Binance Futures Client successfully initialized
+2025-09-30 14:57:59,869 INFO :: Websocket connected
+2025-09-30 14:57:59,870 INFO :: Websocket Binance Connection opened
+2025-09-30 15:00:28,832 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-30 15:00:29,166 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/11" 200 None
+2025-09-30 15:00:29,192 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-30 15:00:29,501 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v2/account?timestamp=1759233629191&signature=6f7b2c55995f653c64c3a6b63a7daeac66031391462861d91c1ee11e2edde4c3 HTTP/11" 200 None
+2025-09-30 15:00:29,505 INFO :: Binance Futures Client successfully initialized
+2025-09-30 15:00:30,511 INFO :: Websocket connected
+2025-09-30 15:00:30,511 INFO :: Websocket Binance Connection opened
+2025-09-30 15:01:03,733 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-30 15:01:04,073 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/11" 200 None
+2025-09-30 15:01:04,100 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-30 15:01:04,407 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v2/account?timestamp=1759233664099&signature=9ccabadf383dce2fbd25385da0ee9dbee1263fc97e9f1c802b03faa0a321bb10 HTTP/11" 200 None
+2025-09-30 15:01:04,411 INFO :: Binance Futures Client successfully initialized
+2025-09-30 15:01:05,321 INFO :: Websocket connected
+2025-09-30 15:01:05,321 INFO :: Websocket Binance Connection opened
+2025-09-30 15:23:50,731 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-30 15:23:51,069 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/11" 200 None
+2025-09-30 15:23:51,095 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-30 15:23:51,405 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v2/account?timestamp=1759235031094&signature=c70643f532ce8768980d6181c19bbce8e4aa4e594f5f2d722fe6824d76fe7445 HTTP/11" 200 None
+2025-09-30 15:23:51,410 INFO :: Binance Futures Client successfully initialized
+2025-09-30 15:23:52,365 INFO :: Websocket connected
+2025-09-30 15:23:52,365 INFO :: Websocket Binance Connection opened
+2025-09-30 15:26:42,160 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-30 15:26:42,494 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/11" 200 None
+2025-09-30 15:26:42,518 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-09-30 15:26:42,831 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v2/account?timestamp=1759235202517&signature=5ee33d1b270ee783ad22ae55bbc523e062527fe684b2e7e30b8fcdab245f6ae0 HTTP/11" 200 None
+2025-09-30 15:26:42,834 INFO :: Binance Futures Client successfully initialized
+2025-09-30 15:26:43,825 INFO :: Websocket connected
+2025-09-30 15:26:43,825 INFO :: Websocket Binance Connection opened
+2025-09-30 15:34:12,075 ERROR :: Websocket Binance Connection Error: Connection to remote host was lost.
+2025-09-30 15:34:12,076 ERROR :: Connection to remote host was lost. - goodbye
+2025-09-30 15:34:12,076 WARNING :: Websocket Binance Connection closed: None code || None
+2025-09-30 15:34:12,971 INFO :: Websocket connected
+2025-09-30 15:34:12,971 INFO :: Websocket Binance Connection opened
+2025-10-01 14:36:04,033 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-10-01 14:36:04,389 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/11" 200 None
+2025-10-01 14:36:04,415 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-10-01 14:36:04,731 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v2/account?timestamp=1759318564413&signature=93436b5d10a94dad3bcf400c4a3d2ba5fdb3ba56d45447c8c6988b8d03e2446f HTTP/11" 200 None
+2025-10-01 14:36:04,735 INFO :: Binance Futures Client successfully initialized
+2025-10-01 14:36:05,799 INFO :: Websocket connected
+2025-10-01 14:36:05,799 INFO :: Websocket Binance Connection opened
+2025-10-01 14:36:47,900 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-10-01 14:36:48,243 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/11" 200 None
+2025-10-01 14:36:48,266 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-10-01 14:36:48,586 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v2/account?timestamp=1759318608265&signature=ae00ed71e411aa0c1b4110adcd43b1f6c843fe23bea60ba4130157a062231d0c HTTP/11" 200 None
+2025-10-01 14:36:48,589 INFO :: Binance Futures Client successfully initialized
+2025-10-01 14:36:49,484 INFO :: Websocket connected
+2025-10-01 14:36:49,484 INFO :: Websocket Binance Connection opened
+2025-10-01 14:41:39,064 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-10-01 14:41:39,399 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/11" 200 None
+2025-10-01 14:41:39,462 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-10-01 14:41:39,774 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v2/account?timestamp=1759318899460&signature=3e24fbc13e4ba8820eee7b9394073a97ba2e7bbd453ebccfe99af8bd5255e4e6 HTTP/11" 200 None
+2025-10-01 14:41:39,781 INFO :: Binance Futures Client successfully initialized
+2025-10-01 14:41:40,743 INFO :: Websocket connected
+2025-10-01 14:41:40,743 INFO :: Websocket Binance Connection opened
+2025-10-01 14:42:37,238 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-10-01 14:42:37,591 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/11" 200 None
+2025-10-01 14:42:37,628 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-10-01 14:42:37,943 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v2/account?timestamp=1759318957627&signature=36d4d5bafaf1cddff92944326198adefdea7acd6d7177185f7981ff4d0a6fe1c HTTP/11" 200 None
+2025-10-01 14:42:37,949 INFO :: Binance Futures Client successfully initialized
+2025-10-01 14:42:38,880 INFO :: Websocket connected
+2025-10-01 14:42:38,881 INFO :: Websocket Binance Connection opened
+2025-10-01 14:43:34,029 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-10-01 14:43:34,364 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/11" 200 None
+2025-10-01 14:43:34,388 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-10-01 14:43:34,701 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v2/account?timestamp=1759319014387&signature=63f576a3ad334043ca66d689ff4181b99ae41500f48df43637d06178da31a465 HTTP/11" 200 None
+2025-10-01 14:43:34,706 INFO :: Binance Futures Client successfully initialized
+2025-10-01 14:43:35,620 INFO :: Websocket connected
+2025-10-01 14:43:35,620 INFO :: Websocket Binance Connection opened
+2025-10-01 15:06:13,219 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-10-01 15:06:14,414 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/11" 200 None
+2025-10-01 15:06:14,446 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-10-01 15:06:15,311 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v2/account?timestamp=1759320374445&signature=ccc4a5c430aac76dd4623134b16106a6236c4a08ca9e007dfc09984ec4737c56 HTTP/11" 200 None
+2025-10-01 15:06:15,316 INFO :: Binance Futures Client successfully initialized
+2025-10-01 15:06:16,233 INFO :: Websocket connected
+2025-10-01 15:06:16,233 INFO :: Websocket Binance Connection opened
+2025-10-01 15:09:42,346 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-10-01 15:09:42,686 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/11" 200 None
+2025-10-01 15:09:42,709 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-10-01 15:09:43,027 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v2/account?timestamp=1759320582708&signature=08978f562be20c19ab03ec532aa21de2da9c8a7ad80b11e6725a01d7978d49d8 HTTP/11" 200 None
+2025-10-01 15:09:43,032 INFO :: Binance Futures Client successfully initialized
+2025-10-01 15:09:43,938 INFO :: Websocket connected
+2025-10-01 15:09:43,939 INFO :: Websocket Binance Connection opened
+2025-10-01 15:10:35,128 ERROR :: Websocket Binance Connection Error: Connection to remote host was lost.
+2025-10-01 15:10:35,130 ERROR :: Connection to remote host was lost. - goodbye
+2025-10-01 15:10:35,130 WARNING :: Websocket Binance Connection closed: None code || None
+2025-10-01 15:10:35,980 INFO :: Websocket connected
+2025-10-01 15:10:35,980 INFO :: Websocket Binance Connection opened
+2025-10-01 15:12:12,221 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-10-01 15:12:12,565 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/11" 200 None
+2025-10-01 15:12:12,586 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-10-01 15:12:12,898 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v2/account?timestamp=1759320732585&signature=e94b4b12d32c0c372ef00a259d2f23c665fcc66a25d65033962c20500f8a3077 HTTP/11" 200 None
+2025-10-01 15:12:12,901 INFO :: Binance Futures Client successfully initialized
+2025-10-01 15:12:13,858 INFO :: Websocket connected
+2025-10-01 15:12:13,858 INFO :: Websocket Binance Connection opened
+2025-10-01 15:13:09,750 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-10-01 15:13:10,091 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/11" 200 None
+2025-10-01 15:13:10,115 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-10-01 15:13:10,426 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v2/account?timestamp=1759320790114&signature=fd74e6647f39d69d5f9a830777422eb72b916538c3ba544c1b4826969579588c HTTP/11" 200 None
+2025-10-01 15:13:10,430 INFO :: Binance Futures Client successfully initialized
+2025-10-01 15:13:11,343 INFO :: Websocket connected
+2025-10-01 15:13:11,343 INFO :: Websocket Binance Connection opened
+2025-10-01 15:18:45,253 ERROR :: Websocket Binance Connection Error: Connection to remote host was lost.
+2025-10-01 15:18:45,253 ERROR :: Connection to remote host was lost. - goodbye
+2025-10-01 15:18:45,253 WARNING :: Websocket Binance Connection closed: None code || None
+2025-10-01 15:18:46,139 INFO :: Websocket connected
+2025-10-01 15:18:46,139 INFO :: Websocket Binance Connection opened
+2025-10-01 15:22:06,478 ERROR :: Websocket Binance Connection Error: Connection to remote host was lost.
+2025-10-01 15:22:06,479 ERROR :: Connection to remote host was lost. - goodbye
+2025-10-01 15:22:06,479 WARNING :: Websocket Binance Connection closed: None code || None
+2025-10-01 15:22:07,330 INFO :: Websocket connected
+2025-10-01 15:22:07,331 INFO :: Websocket Binance Connection opened
+2025-10-01 15:22:33,771 ERROR :: Websocket Binance Connection Error: Connection to remote host was lost.
+2025-10-01 15:22:33,771 ERROR :: Connection to remote host was lost. - goodbye
+2025-10-01 15:22:33,772 WARNING :: Websocket Binance Connection closed: None code || None
+2025-10-01 15:22:34,617 INFO :: Websocket connected
+2025-10-01 15:22:34,617 INFO :: Websocket Binance Connection opened
+2025-10-01 15:38:43,399 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-10-01 15:38:43,735 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/11" 200 None
+2025-10-01 15:38:43,764 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-10-01 15:38:44,073 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v2/account?timestamp=1759322323762&signature=52a5f6de6b12a4923a9cd3a32ccf9c607209416cfbf35cc04bb90519905e31d0 HTTP/11" 200 None
+2025-10-01 15:38:44,077 INFO :: Binance Futures Client successfully initialized
+2025-10-01 15:38:44,978 INFO :: Websocket connected
+2025-10-01 15:38:44,978 INFO :: Websocket Binance Connection opened

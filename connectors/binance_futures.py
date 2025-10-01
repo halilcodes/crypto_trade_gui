@@ -316,7 +316,8 @@ if __name__ == "__main__":
 
     client = BinanceFuturesClient(False, keys.api_public, keys.api_secret)
 
-    pprint(client.contracts['ADAUSDT'].get_all_info())
+    pprint(list(client.contracts.keys()))
+    # pprint(client.contracts['ADAUSDT'].get_all_info())
 
 
 
