@@ -68,6 +68,7 @@ class Root(tk.Tk):
 
                     if symbol not in self.binance.prices:
                         self.binance.get_bid_ask(self.binance.contracts[symbol])
+                        self.binance.subscribe_channel([self.binance.contracts[symbol]])
                         continue
 
                     precision = self.binance.contracts[symbol].price_decimals

@@ -1,4 +1,3 @@
-import logging
 from pprint import pprint
 
 import requests
@@ -11,7 +10,7 @@ import websocket
 import threading
 import json
 import typing
-from models import Balance, Candle, Contract, OrderStatus
+from strategies import *
 
 logger = logging.getLogger()
 
@@ -33,6 +32,8 @@ class BinanceFuturesClient:
         self._api_public = api_public
         self._api_secret = api_secret
         self._header = {'X-MBX-APIKEY':self._api_public}
+
+        self.strategies: typing.Dict[int, typing.Union[TechnicalStrategy, BreakoutStrategy]] = dict()
 
 
         self.prices = dict()
@@ -110,7 +111,7 @@ class BinanceFuturesClient:
         candles = []
         if content:
             for c in content:
-                candles.append(Candle(c))
+                candles.append(Candle(candle_info=c, timeframe=interval))
         return candles
 
     def get_bid_ask(self, contract: Contract) -> dict[str, float]:
@@ -249,11 +250,10 @@ class BinanceFuturesClient:
 
     def _on_open(self, ws):
         logger.info("Websocket Binance Connection opened")
-        # TODO: either sub to no channel or use !bookTicker while initializing
-        # preferably no channel
 
-
-        self.subscribe_channel(list(self.contracts.values()), "bookTicker")
+        # initial_subs = [self.contracts["BTCUSDT"],self.contracts["ADAUSDT"],self.contracts["ETHUSDT"],
+        #                 self.contracts["SOLUSDT"], self.contracts["LINKUSDT"]]
+        # self.subscribe_channel(initial_subs, "bookTicker")
 
 
     def _on_close(self, ws, code, msg:str):
@@ -280,36 +280,53 @@ class BinanceFuturesClient:
                     self.prices[symbol]['bidQty'] = float(data['B'])
                     self.prices[symbol]['askQty'] = float(data['A'])
 
-                #TODO: remove print when done!
-                # print(f"{symbol}: {self.prices[symbol]}")
-                # self._add_log(f"{symbol}: {self.prices[symbol]}")
+            elif data['e'] == "aggTrade":
+
+                symbol = data['s']
+                price = float(data['p'])
+                quantity = float(data['q'])
+                event_time = data['T']
+
+                for key, strat in self.strategies.items():
+                    if strat.contract.symbol == symbol:
+                        res = strat.parse_trades(price, quantity, event_time)
+                        strat.check_trade(res)
+
 
     def subscribe_channel(self, contracts: list[Contract], channel:str="bookTicker"):
 
-        # TODO: SUBBİNG TO EVERY CONTRACK BY NAME FAİLS
         data = {
         'method': "SUBSCRIBE",
         'params': [],
         }
 
-        # for contract in contracts:
-        #     data['params'].append(contract.symbol.lower() + "@"+  channel)
-
-        data['params'].append("btcusdt@" + channel)
-        data['params'].append("ethusdt@" + channel)
-        data['params'].append("adausdt@" + channel)
-        data['params'].append("solusdt@" + channel)
-        data['id'] =  self._ws_id
+        for contract in contracts:
+            data['params'].append(contract.symbol.lower() + "@"+  channel)
 
 
         try:
             self._ws.send(json.dumps(data))
 
-            # logger.info("subbed to channels %s", list(c.symbol for c in contracts))
+            logger.info("subbed to channels %s @ %s", list(c.symbol for c in contracts), channel)
         except Exception as e:
             logger.error("Connection error while subbing @ %s: %s",channel, e)
 
         self._ws_id += 1
+
+    def get_trade_size(self, contract: Contract, price:float, balance_pct: float):
+        balance = self.get_balances()
+        if balance is not None:
+            if 'USDT' in balance:
+                balance = balance['USDT'].wallet_balance
+            else:
+                return None
+        else:
+            return None
+        trade_size = (balance * balance_pct /100) / price
+        trade_size = round(round(trade_size / contract.lot_size) * contract.lot_size, 8)
+
+        logger.info("Binance Futures current USDT balance = %s, trade size = %s", balance, trade_size)
+        return trade_size
 
 
 if __name__ == "__main__":

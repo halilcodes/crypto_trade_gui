@@ -72,6 +72,7 @@ class Watchlist(tk.Frame):
 
         if symbol.upper() in self._binance_symbols:
             self._add_symbol(symbol, "Binance")
+
             event.widget.delete(0, tk.END)
 
 

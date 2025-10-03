@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11804133-d0ea-4ab3-a568-0059bb4af516" name="Changes" comment="add strategy component">
-      <change afterPath="$PROJECT_DIR$/strategies.py" afterDir="false" />
+    <list default="true" id="11804133-d0ea-4ab3-a568-0059bb4af516" name="Changes" comment="initialize strategy implementation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/connectors/binance_futures.py" beforeDir="false" afterPath="$PROJECT_DIR$/connectors/binance_futures.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/info.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interface/root_component.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/root_component.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interface/strategy_component.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/strategy_component.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interface/watchlist_component.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/watchlist_component.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/strategies.py" beforeDir="false" afterPath="$PROJECT_DIR$/strategies.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,7 +268,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758896957533</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="initialize strategy implementation">
+      <option name="closed" value="true" />
+      <created>1759327405338</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1759327405338</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -276,6 +285,7 @@
     <MESSAGE value="update the UI" />
     <MESSAGE value="create watchlist widget" />
     <MESSAGE value="add strategy component" />
-    <option name="LAST_COMMIT_MESSAGE" value="add strategy component" />
+    <MESSAGE value="initialize strategy implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="initialize strategy implementation" />
   </component>
 </project>

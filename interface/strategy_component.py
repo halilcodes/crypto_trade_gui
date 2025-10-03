@@ -1,9 +1,7 @@
 import tkinter as tk
-import typing
-from tkinter import OptionMenu, Entry, Button
-from typing import Dict, Type, List, Callable
 from interface.styling import *
 from connectors.binance_futures import BinanceFuturesClient
+import strategies as strat
 
 
 class StrategyEditor(tk.Frame):
@@ -62,7 +60,8 @@ class StrategyEditor(tk.Frame):
             "Technical": [
                 {"code_name": "ema_fast", "name": "MACD Fast Length", "widget": tk.Entry, "data_type": int},
                 {"code_name": "ema_slow", "name": "MACD Slow Length", "widget": tk.Entry, "data_type": int},
-                {"code_name": "ema_signal", "name": "MACD Signal Length", "widget": tk.Entry, "data_type": int}
+                {"code_name": "ema_signal", "name": "MACD Signal Length", "widget": tk.Entry, "data_type": int},
+                {"code_name": "rsi_length", "name": "RSI Periods", "widget": tk.Entry, "data_type": int}
             ],
             "Breakout": [
                 {"code_name": "min_volume", "name": "Minimum Volume", "widget": tk.Entry, "data_type": float},
@@ -98,7 +97,32 @@ class StrategyEditor(tk.Frame):
         sl_pct = float(self.body_widgets['sl_pct'][index].get())
         tp_pct = float(self.body_widgets['tp_pct'][index].get())
 
+        contract = self.binance.contracts[symbol]
+
+
         if self.body_widgets['activation'][index].cget("text") == "OFF":
+
+            if strat_selected == "Technical":
+                new_strategy = strat.TechnicalStrategy(self.binance, contract, "binance", timeframe, balance_pct,
+                                                       tp_pct, sl_pct, self._additional_parameters[index])
+
+            elif strat_selected == "Breakout":
+                new_strategy = strat.BreakoutStrategy(self.binance, contract, "binance", timeframe, balance_pct,
+                                                       tp_pct, sl_pct, self._additional_parameters[index])
+            else:
+                return
+
+            new_strategy.candles = self.binance.get_historical_candles(contract, timeframe)
+
+            if len(new_strategy.candles) == 0:
+                self.root.logging_frame.add_log(f"No historical data retrieved for {contract.symbol}")
+                return
+
+
+            self.binance.subscribe_channel([contract], "aggTrade")
+            self.binance.strategies[index] = new_strategy
+
+
             for param in self._base_params:
                 code_name = param['code_name']
 
@@ -109,6 +133,9 @@ class StrategyEditor(tk.Frame):
             self.root.logging_frame.add_log(f"{strat_selected} strategy on {symbol}"
                                             f" / {timeframe} started")
         else:
+
+            del self.binance.strategies[index]
+
             for param in self._base_params:
                 code_name = param['code_name']
 
@@ -203,7 +230,7 @@ class StrategyEditor(tk.Frame):
 
         self._additional_parameters[b_index] = dict()
 
-        for strat, params in self._extra_params.items():
+        for strat_, params in self._extra_params.items():
             for param in params:
                 self._additional_parameters[b_index][param['code_name']] = None
 
